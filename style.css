@@ -348,6 +348,8 @@ h1{ font-size: 45px;}
     border: none;
 }
 
+
+
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;

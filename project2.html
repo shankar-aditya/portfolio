@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="dots-wrapper">
+            <div id="dot-1" class="dot"></div>
+            <div id="
+            dot-2" class="dot"></div>
+            <div id="dot-3" class="dot"></div>
+        </div>
+        <ul id="navigation">
+            <li><a target="_parent" href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <h3>Low Light Image Enhancement</h3>
+        <p class="para-1">When images are captured in low-light conditions, the images often suffer from low visibility. Besides degrading the visual aesthetics of images, this poor quality may also significantly degenerate the performance of many computer vision and multimedia algorithms that are primarily designed for high-quality inputs. This is because a lot of applications like object detection and tracking are often designed using clear and noise-free images, however, when noisy low-light images are used with these applications, they cannot cope with the generally noisy data.</p>
+        <p class="para-1">A simple model was developed that improves visibility as well as reduces noise present in the image. 
+            The technique first estimates the illumination of each pixel individually by finding the maximum value in R, G, and B channels 
+            in the image. Further, the illumination map obtained is refined by imposing the image with the structure of the image on it, as the final illumination map. The image obtained after all the processing is shown to contain quite a bit more data compared with the input image. </p>
+        <p class="para-1">According to the Retinex model, the (colour) image can be decomposed into two factors, reflectance and illumination. The method used in this project is built upon the following (Retinex) model, which explains the formation of a low-light image: L = R ◦ T(1), where L, R and T are the captured image, the desired recovery and the illumination map, respectively, and the operator ◦ means element-wise multiplication.</p>
+        <p class="para-1">An assumption used for colour images is that three channels share the same illumination map. The model, with clear physical meaning, says that the observed image can be decomposed into a product of the desired light-enhanced image and the illumination map. By slightly transforming the equation mentioned above, we have R = L/T,(2) where the division is element-wise. It is apparent that the estimation of T is key to the recovery of R. In this way, the problem is simplified, only demanding the estimation of T. Hence, L/T can directly act as the light-enhanced result.</p>
+        <p class="para-1">BM3D is a recent denoising method based on the fact that an image has a locally sparse representation in the transform domain. This sparsity is enhanced by grouping similar 2D image patches into 3D groups. In this project, an open-source implementation of the method has been used. </p>
+        <p class="para-1"></p>
+        <p class="para-1"></p>
+    </div>
+</body>
+</html>
